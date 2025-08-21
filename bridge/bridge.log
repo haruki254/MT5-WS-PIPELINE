@@ -1,0 +1,11 @@
+2025-08-21 17:49:57,317 - INFO - Supabase client initialized
+2025-08-21 17:49:57,317 - INFO - Initializing MT5 Bridge...
+2025-08-21 17:49:57,317 - INFO - MT5 initialized successfully. Account: 12345678, Server: MockServer-Demo
+2025-08-21 17:49:58,539 - INFO - HTTP Request: GET https://hmehzemjfgahqyoljdps.supabase.co/rest/v1/positions?select=count "HTTP/2 404 Not Found"
+2025-08-21 17:49:58,540 - ERROR - Supabase connection test failed: {'message': "Could not find the table 'public.positions' in the schema cache", 'code': 'PGRST205', 'hint': None, 'details': None}
+2025-08-21 17:49:58,540 - ERROR - Failed to connect to Supabase
+2025-08-21 17:49:58,540 - ERROR - Failed to initialize bridge, exiting...
+2025-08-21 17:49:58,540 - INFO - Shutting down MT5 Bridge...
+2025-08-21 17:49:59,146 - INFO - HTTP Request: POST https://hmehzemjfgahqyoljdps.supabase.co/rest/v1/bridge_status?on_conflict=id "HTTP/2 404 Not Found"
+2025-08-21 17:49:59,146 - INFO - MT5 connection shut down
+2025-08-21 17:49:59,146 - INFO - Bridge shutdown complete
