@@ -1,0 +1,371 @@
+2025-08-21 21:01:10,979 - __main__ - INFO - Initializing MT5 Bridge...
+2025-08-21 21:01:10,980 - __main__ - INFO - Creating MT5 client...
+2025-08-21 21:01:10,981 - __main__ - INFO - Using MT5Client initialize method...
+2025-08-21 21:01:11,031 - mt5_client - INFO - MT5 initialized successfully
+2025-08-21 21:01:11,034 - mt5_client - INFO - MT5 Terminal: ExnessKE MT5 Terminal 5200
+2025-08-21 21:01:11,035 - mt5_client - INFO - Account: 210668269 (ExnessKE-MT5Trial9)
+2025-08-21 21:01:11,035 - __main__ - INFO - Testing MT5 connection by getting positions...
+2025-08-21 21:01:11,036 - __main__ - INFO - MT5 connection test successful - found 0 positions
+2025-08-21 21:01:11,037 - __main__ - INFO - Skipping Supabase initialization for testing...
+2025-08-21 21:01:11,051 - __main__ - INFO - Bridge initialized successfully
+2025-08-21 21:01:11,052 - __main__ - INFO - Starting bridge main loop...
+2025-08-21 21:01:11,053 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:12,054 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:13,054 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:14,057 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:15,064 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:16,064 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:17,065 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:18,065 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:19,068 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:20,071 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:20,072 - __main__ - WARNING - Failed to send heartbeat: 'NoneType' object has no attribute 'send_heartbeat'
+2025-08-21 21:01:21,164 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:22,213 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:23,224 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:24,227 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:25,326 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:26,590 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:27,591 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:28,591 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:29,595 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:30,920 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:31,152 - __main__ - WARNING - Failed to send heartbeat: 'NoneType' object has no attribute 'send_heartbeat'
+2025-08-21 21:01:32,033 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:33,253 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:34,267 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:35,285 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:36,317 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:37,326 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:38,431 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:39,487 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:40,562 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:41,562 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:41,564 - __main__ - WARNING - Failed to send heartbeat: 'NoneType' object has no attribute 'send_heartbeat'
+2025-08-21 21:01:42,642 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:43,658 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:44,658 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:45,658 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:46,666 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:47,668 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:48,668 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:49,684 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:50,684 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:51,687 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:51,689 - __main__ - WARNING - Failed to send heartbeat: 'NoneType' object has no attribute 'send_heartbeat'
+2025-08-21 21:01:52,687 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:53,687 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:54,694 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:55,697 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:56,795 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:57,795 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:58,862 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:01:59,862 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:00,863 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:01,863 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:01,863 - __main__ - WARNING - Failed to send heartbeat: 'NoneType' object has no attribute 'send_heartbeat'
+2025-08-21 21:02:02,863 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:03,869 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:04,870 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:05,871 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:06,871 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:08,322 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:09,323 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:10,323 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:11,332 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:12,335 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:12,362 - __main__ - WARNING - Failed to send heartbeat: 'NoneType' object has no attribute 'send_heartbeat'
+2025-08-21 21:02:13,354 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:14,360 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:15,386 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:16,392 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:17,545 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:18,545 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:19,545 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:20,547 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:21,547 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:22,547 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:22,548 - __main__ - WARNING - Failed to send heartbeat: 'NoneType' object has no attribute 'send_heartbeat'
+2025-08-21 21:02:23,551 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:24,550 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:25,549 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:26,553 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:27,549 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:28,551 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:29,551 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:30,551 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:31,551 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:32,553 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:32,553 - __main__ - WARNING - Failed to send heartbeat: 'NoneType' object has no attribute 'send_heartbeat'
+2025-08-21 21:02:33,552 - __main__ - ERROR - Error checking for new trades: 'NoneType' object has no attribute 'get_last_close_check'
+2025-08-21 21:02:50,927 - __main__ - INFO - Initializing MT5 Bridge...
+2025-08-21 21:02:50,928 - __main__ - INFO - Creating MT5 client...
+2025-08-21 21:02:50,929 - __main__ - INFO - Using MT5Client initialize method...
+2025-08-21 21:02:50,994 - mt5_client - INFO - MT5 initialized successfully
+2025-08-21 21:02:51,004 - mt5_client - INFO - MT5 Terminal: ExnessKE MT5 Terminal 5200
+2025-08-21 21:02:51,005 - mt5_client - INFO - Account: 210668269 (ExnessKE-MT5Trial9)
+2025-08-21 21:02:51,005 - __main__ - INFO - Testing MT5 connection by getting positions...
+2025-08-21 21:02:51,007 - __main__ - INFO - MT5 connection test successful - found 0 positions
+2025-08-21 21:02:51,012 - __main__ - INFO - Skipping Supabase initialization for testing...
+2025-08-21 21:02:51,033 - __main__ - INFO - Bridge initialized successfully
+2025-08-21 21:02:51,036 - __main__ - INFO - Starting bridge main loop...
+2025-08-21 21:05:11,532 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:11,534 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.18
+2025-08-21 21:05:12,532 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:12,536 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.23
+2025-08-21 21:05:13,566 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:13,570 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.19
+2025-08-21 21:05:14,582 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:14,584 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:15,582 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:15,583 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:16,666 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:16,667 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.15
+2025-08-21 21:05:17,666 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:17,668 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.16
+2025-08-21 21:05:18,667 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:18,680 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.17
+2025-08-21 21:05:19,668 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:19,676 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:20,669 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:20,672 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:21,670 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:21,672 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.19
+2025-08-21 21:05:22,731 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:22,765 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.15
+2025-08-21 21:05:23,739 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:23,742 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.09
+2025-08-21 21:05:24,841 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:24,857 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.1
+2025-08-21 21:05:25,922 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:25,925 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.09
+2025-08-21 21:05:26,968 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:26,969 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.01
+2025-08-21 21:05:27,971 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:27,973 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.04
+2025-08-21 21:05:28,971 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:28,971 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.08
+2025-08-21 21:05:29,999 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:30,070 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.09
+2025-08-21 21:05:31,000 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:31,001 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.09
+2025-08-21 21:05:31,999 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:32,000 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.11
+2025-08-21 21:05:33,000 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:33,000 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.12
+2025-08-21 21:05:34,000 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:34,001 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.08
+2025-08-21 21:05:35,001 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:35,001 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.12
+2025-08-21 21:05:36,009 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:36,362 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.12
+2025-08-21 21:05:37,012 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:37,013 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.21
+2025-08-21 21:05:38,010 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:38,011 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.15
+2025-08-21 21:05:39,010 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:39,011 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.11
+2025-08-21 21:05:40,035 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:40,037 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.11
+2025-08-21 21:05:41,018 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:41,019 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.11
+2025-08-21 21:05:42,022 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:42,023 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.11
+2025-08-21 21:05:43,019 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:43,019 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.19
+2025-08-21 21:05:44,022 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:44,022 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:45,021 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:45,021 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:46,022 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:46,023 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:47,021 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:47,022 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:48,023 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:48,024 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:49,022 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:49,023 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:50,023 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:50,025 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:51,024 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:51,025 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:52,031 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:52,032 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.21
+2025-08-21 21:05:53,028 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:53,029 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.21
+2025-08-21 21:05:54,026 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:54,027 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.21
+2025-08-21 21:05:55,026 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:55,026 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.21
+2025-08-21 21:05:56,026 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:56,027 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.17
+2025-08-21 21:05:57,027 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:57,028 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.2
+2025-08-21 21:05:58,027 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:58,028 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:05:59,027 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:05:59,028 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:06:00,027 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:00,028 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.23
+2025-08-21 21:06:01,028 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:01,029 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.23
+2025-08-21 21:06:02,029 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:02,030 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.23
+2025-08-21 21:06:03,029 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:03,046 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:06:04,161 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:04,224 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.22
+2025-08-21 21:06:05,161 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:05,163 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.26
+2025-08-21 21:06:06,162 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:06,176 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.26
+2025-08-21 21:06:07,388 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:07,487 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.26
+2025-08-21 21:06:08,388 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:08,389 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.25
+2025-08-21 21:06:09,389 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:09,389 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.25
+2025-08-21 21:06:10,389 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:10,390 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.25
+2025-08-21 21:06:11,389 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:11,390 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.21
+2025-08-21 21:06:12,389 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:12,390 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.11
+2025-08-21 21:06:13,393 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:13,393 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.12
+2025-08-21 21:06:14,392 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:14,392 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.12
+2025-08-21 21:06:15,394 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:15,396 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.15
+2025-08-21 21:06:16,392 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:16,393 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.21
+2025-08-21 21:06:17,393 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:17,394 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.16
+2025-08-21 21:06:18,392 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:18,393 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.13
+2025-08-21 21:06:19,394 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:19,395 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.08
+2025-08-21 21:06:20,393 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:20,393 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.02
+2025-08-21 21:06:21,393 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:21,394 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.02
+2025-08-21 21:06:22,393 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:22,394 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.05
+2025-08-21 21:06:23,394 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:23,394 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.05
+2025-08-21 21:06:24,394 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:24,394 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.03
+2025-08-21 21:06:25,394 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:25,396 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.02
+2025-08-21 21:06:26,405 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:26,406 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.07
+2025-08-21 21:06:27,406 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:27,410 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.07
+2025-08-21 21:06:28,406 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:28,408 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.07
+2025-08-21 21:06:29,911 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:30,110 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.01
+2025-08-21 21:06:30,912 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:30,912 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.08
+2025-08-21 21:06:31,913 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:31,914 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.16
+2025-08-21 21:06:32,913 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:32,913 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.06
+2025-08-21 21:06:33,913 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:33,913 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: -0.05
+2025-08-21 21:06:34,913 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:34,914 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.09
+2025-08-21 21:06:35,917 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:35,917 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.12
+2025-08-21 21:06:36,916 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:36,917 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.15
+2025-08-21 21:06:37,916 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:37,917 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.21
+2025-08-21 21:06:38,917 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:38,918 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.21
+2025-08-21 21:06:39,916 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:39,917 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.23
+2025-08-21 21:06:40,919 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:40,920 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.23
+2025-08-21 21:06:41,932 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:41,938 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.23
+2025-08-21 21:06:42,927 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:42,928 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.16
+2025-08-21 21:06:43,924 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:43,924 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.16
+2025-08-21 21:06:44,925 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:44,926 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.15
+2025-08-21 21:06:45,956 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:45,961 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.15
+2025-08-21 21:06:46,956 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:46,957 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.15
+2025-08-21 21:06:48,154 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:48,361 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.31
+2025-08-21 21:06:49,155 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:49,156 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.34
+2025-08-21 21:06:50,155 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:50,156 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.37
+2025-08-21 21:06:51,156 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:51,156 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.39
+2025-08-21 21:06:52,156 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:52,157 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.39
+2025-08-21 21:06:53,157 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:53,161 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.39
+2025-08-21 21:06:54,161 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:54,161 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.34
+2025-08-21 21:06:55,159 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:55,160 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.39
+2025-08-21 21:06:56,164 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:56,165 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.4
+2025-08-21 21:06:57,160 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:57,161 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.4
+2025-08-21 21:06:58,164 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:58,164 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.39
+2025-08-21 21:06:59,161 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:06:59,162 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.32
+2025-08-21 21:07:00,161 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:00,161 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.28
+2025-08-21 21:07:01,161 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:01,162 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.27
+2025-08-21 21:07:02,162 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:02,162 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.3
+2025-08-21 21:07:03,162 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:03,164 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.33
+2025-08-21 21:07:04,163 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:04,170 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.33
+2025-08-21 21:07:05,163 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:05,168 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.28
+2025-08-21 21:07:06,176 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:06,179 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.32
+2025-08-21 21:07:07,192 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:07,193 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.39
+2025-08-21 21:07:08,192 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:08,210 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.43
+2025-08-21 21:07:09,192 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:09,193 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.51
+2025-08-21 21:07:10,214 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:10,232 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.46
+2025-08-21 21:07:11,214 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:11,215 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.55
+2025-08-21 21:07:12,217 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:12,219 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.55
+2025-08-21 21:07:13,220 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:13,222 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.49
+2025-08-21 21:07:14,251 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:14,279 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.56
+2025-08-21 21:07:15,252 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:15,254 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.46
+2025-08-21 21:07:16,252 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:16,253 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.46
+2025-08-21 21:07:17,253 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:17,266 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.49
+2025-08-21 21:07:18,302 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:18,302 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.49
+2025-08-21 21:07:19,311 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:19,315 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.48
+2025-08-21 21:07:20,311 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:20,312 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.56
+2025-08-21 21:07:21,312 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:21,312 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.57
+2025-08-21 21:07:22,313 - __main__ - INFO - Found 1 open positions
+2025-08-21 21:07:22,322 - __main__ - INFO - Position: XAUUSDm - 0 - Volume: 0.01 - P&L: 0.53
