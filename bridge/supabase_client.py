@@ -156,6 +156,64 @@ class SupabaseClient:
             logger.error(f"Error appending trade: {e}")
             raise
 
+    def move_to_history(self, trade_data: Dict) -> None:
+        """
+        Move a closed trade to history by recording the CLOSE event and removing from positions.
+        
+        Args:
+            trade_data: Dictionary containing the final trade state information
+        """
+        try:
+            # Validate required fields
+            required_fields = ['ticket', 'symbol', 'type', 'volume', 'price']
+            for field in required_fields:
+                if field not in trade_data:
+                    raise ValueError(f"Missing required field '{field}' in trade data")
+            
+            ticket = int(trade_data['ticket'])
+            
+            # First, record the CLOSE event in trades history
+            close_trade = {
+                'ticket': ticket,
+                'symbol': str(trade_data['symbol']),
+                'type': self._convert_mt5_type_to_string(int(trade_data['type'])),
+                'action': 'CLOSE',
+                'volume': float(trade_data['volume']),
+                'price': float(trade_data['price']),
+                'profit': float(trade_data.get('profit', 0.0)),
+                'swap': float(trade_data.get('swap', 0.0)),
+                'commission': float(trade_data.get('commission', 0.0)),
+                'comment': str(trade_data.get('comment', ''))
+            }
+            
+            # Check if CLOSE event already exists to prevent duplicates
+            existing_close = self.supabase.table('trades').select('id').eq(
+                'ticket', ticket
+            ).eq(
+                'action', 'CLOSE'
+            ).execute()
+            
+            if not existing_close.data:
+                # Insert the CLOSE event
+                result = self.supabase.table('trades').insert(close_trade).execute()
+                logger.info(f"Recorded CLOSE trade: ticket={ticket} symbol={trade_data['symbol']}")
+            else:
+                logger.debug(f"CLOSE trade already exists for ticket={ticket}")
+            
+            # Remove from positions table
+            delete_result = self.supabase.table('positions').delete().eq(
+                'ticket', ticket
+            ).execute()
+            
+            if delete_result.data:
+                logger.info(f"Removed closed position from positions table: ticket={ticket}")
+            else:
+                logger.debug(f"Position ticket={ticket} not found in positions table")
+                
+        except Exception as e:
+            logger.error(f"Error moving trade to history: {e}")
+            raise
+
     def get_last_close_check(self) -> datetime:
         """
         Get the timestamp of the last close detection check.
@@ -377,6 +435,10 @@ def upsert_positions(positions: List[Dict]) -> None:
 def append_trade(trade_data: Dict) -> None:
     """Append trade event to Supabase."""
     get_client().append_trade(trade_data)
+
+def move_to_history(trade_data: Dict) -> None:
+    """Move closed trade to history."""
+    get_client().move_to_history(trade_data)
 
 def get_last_close_check() -> datetime:
     """Get last close check timestamp."""

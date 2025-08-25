@@ -10,7 +10,7 @@ import logging
 import signal
 import sys
 from datetime import datetime, timezone
-from typing import Dict, List
+from typing import Dict, List, Set
 from dotenv import load_dotenv
 from mt5_client import MT5Client
 from supabase_client import SupabaseClient
@@ -36,6 +36,7 @@ class MT5Bridge:
         self.supabase_client = None
         self.running = False
         self.update_interval = int(os.getenv('UPDATE_MS', 1000)) / 1000  # Convert to seconds
+        self.previous_position_tickets = set()  # Track positions from previous iteration
 
     def initialize(self):
         """Initialize MT5 and Supabase connections"""
@@ -66,6 +67,11 @@ class MT5Bridge:
                     logger.info("Testing MT5 connection by getting positions...")
                     positions = self.mt5_client.get_positions()
                     logger.info(f"MT5 connection test successful - found {len(positions) if positions else 0} positions")
+                    
+                    # Initialize previous_position_tickets with current positions
+                    if positions:
+                        self.previous_position_tickets = {pos.get('ticket') for pos in positions if pos.get('ticket')}
+                        logger.info(f"Initialized with {len(self.previous_position_tickets)} existing positions")
                 else:
                     logger.warning("MT5Client missing get_positions method")
             except Exception as e:
@@ -95,6 +101,96 @@ class MT5Bridge:
             logger.error("4. Supabase credentials are correct")
             return False
 
+    def detect_closed_positions(self, current_positions: List[Dict]):
+        """
+        Detect positions that have closed by comparing current vs previous positions.
+        Move closed positions to trade history.
+        
+        Args:
+            current_positions: List of current open positions from MT5
+        """
+        if not self.supabase_client:
+            return
+            
+        try:
+            # Get current position tickets
+            current_tickets = {pos.get('ticket') for pos in current_positions if pos.get('ticket')}
+            
+            # Find tickets that were open before but are not open now (closed positions)
+            closed_tickets = self.previous_position_tickets - current_tickets
+            
+            if closed_tickets:
+                logger.info(f"Detected {len(closed_tickets)} closed positions: {list(closed_tickets)}")
+                
+                # For each closed position, we need to get the final state and move to history
+                # Since the position is no longer in MT5, we need to get it from our database or deal history
+                for ticket in closed_tickets:
+                    try:
+                        # Try to get the final trade state from recent deals
+                        self.handle_closed_position(ticket)
+                    except Exception as e:
+                        logger.error(f"Error handling closed position {ticket}: {e}")
+                
+                # Clean up closed positions from the positions table
+                remaining_tickets = list(current_tickets)
+                self.supabase_client.cleanup_old_positions(remaining_tickets)
+                
+            # Update previous tickets for next iteration
+            self.previous_position_tickets = current_tickets
+            
+        except Exception as e:
+            logger.error(f"Error detecting closed positions: {e}")
+
+    def handle_closed_position(self, ticket: int):
+        """
+        Handle a single closed position by finding its final state and moving to history.
+        
+        Args:
+            ticket: The ticket number of the closed position
+        """
+        try:
+            # Get recent deals to find the closing deal for this position
+            recent_deals = self.mt5_client.get_deals_history()
+            
+            # Look for the closing deal for this position
+            closing_deal = None
+            for deal in recent_deals:
+                # Check if this deal closes our position
+                if (hasattr(deal, 'position_id') and deal.position_id == ticket and 
+                    hasattr(deal, 'entry') and deal.entry == 1):  # DEAL_ENTRY_OUT
+                    closing_deal = deal
+                    break
+                elif (hasattr(deal, 'ticket') and deal.ticket == ticket and
+                      hasattr(deal, 'entry') and deal.entry == 1):  # Alternative check
+                    closing_deal = deal
+                    break
+            
+            if closing_deal:
+                # Convert the closing deal to our trade format
+                closed_trade_data = {
+                    'ticket': ticket,
+                    'symbol': getattr(closing_deal, 'symbol', ''),
+                    'type': getattr(closing_deal, 'type', 0),  # Keep as integer for conversion
+                    'volume': float(getattr(closing_deal, 'volume', 0)),
+                    'price': float(getattr(closing_deal, 'price', 0)),
+                    'profit': float(getattr(closing_deal, 'profit', 0)),
+                    'swap': float(getattr(closing_deal, 'swap', 0)),
+                    'commission': float(getattr(closing_deal, 'commission', 0)),
+                    'comment': getattr(closing_deal, 'comment', 'Position closed')
+                }
+                
+                # Move to history (records CLOSE event and removes from positions)
+                self.supabase_client.move_to_history(closed_trade_data)
+                logger.info(f"Successfully moved closed position {ticket} to history")
+                
+            else:
+                logger.warning(f"Could not find closing deal for position {ticket}")
+                # Fallback: Remove from positions table without detailed close data
+                self.supabase_client.cleanup_old_positions([])  # Will remove this specific position
+                
+        except Exception as e:
+            logger.error(f"Error handling closed position {ticket}: {e}")
+
     def run(self):
         """Main bridge loop"""
         if not self.initialize():
@@ -116,12 +212,22 @@ class MT5Bridge:
                         for pos in positions:
                             logger.info(f"Position: {pos.get('symbol', 'N/A')} - {pos.get('type', 'N/A')} - Volume: {pos.get('volume', 'N/A')} - P&L: {pos.get('profit', 'N/A')}")
                         
-                        # Update positions in Supabase (if available)
+                        # Detect closed positions BEFORE updating current positions
+                        if self.supabase_client:
+                            self.detect_closed_positions(positions)
+                        
+                        # Update current positions in Supabase
                         if self.supabase_client:
                             self.supabase_client.upsert_positions(positions)
                             logger.debug(f"Updated {len(positions)} positions in Supabase")
                     else:
                         logger.debug("No open positions found")
+                        
+                        # If no positions now but we had some before, they're all closed
+                        if self.previous_position_tickets and self.supabase_client:
+                            logger.info("All positions have been closed")
+                            self.detect_closed_positions([])  # Empty list = all closed
+                            
                 except Exception as e:
                     logger.error(f"Error getting/updating positions: {e}")
                 
